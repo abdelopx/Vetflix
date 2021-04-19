@@ -1,5 +1,5 @@
 <template>
-<nav class="flex justify-between text-white bg-black">
+<nav class="flex justify-between text-white fixed inset-x-0 h-16 top-0 bg-opacity-0">
 <div class="flex m-2">
   <div class="mr-7">
       <a class="" href="https://fontmeme.com/netflix-font/"><img width="145" height="145" src="https://fontmeme.com/permalink/210419/dfd1e6030f57a8e561cf9c748aab2fb3.png" alt="netflix-font" border="0"></a>
