@@ -2,6 +2,7 @@
 
 <Header></Header>
 <card-list></card-list>
+<p class="text-center text-white font-medium">Made by abdelopx ❤ https://github.com/abdelopx</p>
 
 </template>
 
