@@ -1,12 +1,8 @@
 <template>
-  
+
   <nav-bar></nav-bar>
-  <home-page></home-page>
-  <home-page></home-page>
-  <home-page></home-page>
-  <home-page></home-page>
-  
-  
+  <router-view></router-view>
+
 </template>
 
 <script>
@@ -14,22 +10,25 @@
 
 export default {
   name: 'App',
-
+  created() {
+    this.$store.dispatch('shows/fetchTrailer');
+  }
 }
+
  
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&display=swap");
 * {
   box-sizing: border-box;
 }
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Martel Sans', sans-serif;
 }
 body {
   margin: 0;
-  background-color: white;
+  background-color: black;
 }
  
 </style>
