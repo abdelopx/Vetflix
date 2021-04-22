@@ -4,7 +4,7 @@
 
 Vetflix is a simplified front end clone of Netflix. It was created with Vue JS. It uses [The MovieDB Api](https://www.themoviedb.org/documentation/api) to search for movies and TV Shows.
 
-![alt text](https://spng.pngfind.com/pngs/s/150-1507248_image-library-stock-file-vue-js-logo-wikimedia.png)
+![Image Caption](https://vuejs.org/images/logo.png)
 
 ### Tools used:
 - Webpack
