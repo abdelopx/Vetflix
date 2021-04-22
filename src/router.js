@@ -1,10 +1,12 @@
 import {createRouter, createWebHistory} from 'vue-router';
+
 import store from './store/index.js'
 
 
 import HomePage from './pages/HomePage.vue';
 import VideoPage from './pages/VideoPage.vue'
 import ContentPage from './pages/ContentPage.vue';
+import Loading from './components/Cards/Loading.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -15,7 +17,9 @@ const router = createRouter({
 
         {path: '/shows', component:ContentPage, props: true},
 
-        {path: '/movies', component:ContentPage, props: true}
+        {path: '/movies', component:ContentPage, props: true},
+
+        {path: '/loading', component: Loading},
 
     ]
 });
@@ -27,6 +31,7 @@ router.beforeEach(function(to, from, next) {
 
 );
 router.beforeEach(function(to, from, next) {
+    router.
     store.dispatch('movies/getMovies')
     .then(next);
 },

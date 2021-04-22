@@ -2,7 +2,7 @@
 
   <nav-bar></nav-bar>
   <router-view></router-view>
-  <p class="text-center text-white font-medium">Made by abdelopx ❤ https://github.com/abdelopx</p>
+  <p class="text-center text-white font-medium mt-48">Made by abdelopx ❤ https://github.com/abdelopx</p>
 
 </template>
 
@@ -11,10 +11,23 @@
 
 export default {
   name: 'App',
-  created() {
-    // this.$store.dispatch('shows/fetchTrailer');
-    // this.$store.dispatch('movies/fetchTrailer');
-  }
+  // async created() {
+  //   try {
+  //   this.isLoading = true;
+  //   await this.$store.dispatch('shows/getShows');
+  //   await this.$store.dispatch('movies/getMovies');
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  //   this.isLoading = false;
+  // },
+  // data() {
+  //   return {
+  //     isLoading: false,
+  //   };
+  // },
+
+
 }
 
  
@@ -30,7 +43,7 @@ html {
 }
 body {
   margin: 0;
-  background-color: black;
+  background-color: black
 }
  
 </style>

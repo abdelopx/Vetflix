@@ -15,6 +15,7 @@ import "tailwindcss/tailwind.css"
 import NavBar from './components/NavBar.vue';
 
 
+
 library.add(fas)
 
 
@@ -22,6 +23,8 @@ const app = createApp(App);
 
 app.component('nav-bar',NavBar);
 app.component('fa', FontAwesomeIcon)
+
+
 
 app.use(router);
 app.use(store);
