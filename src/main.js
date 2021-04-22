@@ -12,7 +12,10 @@ import "tailwindcss/tailwind.css"
 
 
 
+
+
 import NavBar from './components/NavBar.vue';
+import Loading from './components/Cards/Loading.vue';
 
 
 
@@ -23,6 +26,7 @@ const app = createApp(App);
 
 app.component('nav-bar',NavBar);
 app.component('fa', FontAwesomeIcon)
+app.component('loading',Loading);
 
 
 

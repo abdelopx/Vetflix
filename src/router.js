@@ -1,6 +1,6 @@
 import {createRouter, createWebHistory} from 'vue-router';
 
-import store from './store/index.js'
+// import store from './store/index.js'
 
 
 import HomePage from './pages/HomePage.vue';
@@ -24,19 +24,18 @@ const router = createRouter({
     ]
 });
 
-router.beforeEach(function(to, from, next) {
-        store.dispatch('shows/getShows')
-        .then(next);
-},
+// router.beforeEach(function(to, from, next) {
+//         store.dispatch('shows/getShows')
+//         .then(next);
+// },
 
-);
-router.beforeEach(function(to, from, next) {
-    router.
-    store.dispatch('movies/getMovies')
-    .then(next);
-},
+// );
+// router.beforeEach(function(to, from, next) {
+//     store.dispatch('movies/getMovies')
+//     .then(next);
+// },
 
-);
+// );
 
 
 export default router;
