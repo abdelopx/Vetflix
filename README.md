@@ -11,6 +11,11 @@ Vetflix is a simplified front end clone of Netflix. It was created with Vue JS. 
 - Vue Router
 - Tailwind CSS
 
+### Demo
+![](https://media3.giphy.com/media/Nf2QEKJGS9RFGRyF3P/giphy.gif?raw=true)
+
+- Demo link: https://vetflix.netlify.app/
+
 
 ### Runing Project Locally
 - Install dependencies: run `npm install` in root project
@@ -20,7 +25,4 @@ Vetflix is a simplified front end clone of Netflix. It was created with Vue JS. 
 
 
 
-### Demo
-![](https://media3.giphy.com/media/Nf2QEKJGS9RFGRyF3P/giphy.gif?raw=true)
 
-- Demo link: https://vetflix.netlify.app/
