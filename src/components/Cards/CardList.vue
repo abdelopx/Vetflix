@@ -2,10 +2,12 @@
 <div>
 <section-title></section-title>
 </div>
-<div class="flex flex-wrap ml-5 gap-x-4">
+
+<div class="flex justify-around flex-wrap ">
     <single-card v-for="show in fetchedShows"
     :key="show.id"
     :id="show.id"
+    :path="$route.path"
     :name="show.name"
     :poster_path="show.poster_path"
     :overview="show.overview"
@@ -33,8 +35,16 @@ export default {
     },
     computed: {
         fetchedShows() {
-            return this.$store.getters['shows/getShows'];
-        }
+            if(this.$route.path === '/shows') {
+                return this.$store.getters['shows/getShows'];
+            }
+            else if(this.$route.path === '/movies') {
+                return this.$store.getters['movies/getMovies'];
+            }
+            else {
+                return this.$store.getters['shows/getShows'];
+            }
+        },
     }
 }
 </script>

@@ -2,6 +2,7 @@
 
   <nav-bar></nav-bar>
   <router-view></router-view>
+  <p class="text-center text-white font-medium">Made by abdelopx ❤ https://github.com/abdelopx</p>
 
 </template>
 
@@ -11,7 +12,8 @@
 export default {
   name: 'App',
   created() {
-    this.$store.dispatch('shows/fetchTrailer');
+    // this.$store.dispatch('shows/fetchTrailer');
+    // this.$store.dispatch('movies/fetchTrailer');
   }
 }
 

@@ -3,7 +3,6 @@ export default {
         const response = await fetch(`https://api.themoviedb.org/3/trending/tv/week?api_key=`+process.env.VUE_APP_KEY+ `&region=US`);
 
         const responseData = await response.json();
-        console.log(responseData);
 
         const shows = [];
         for (const key in responseData.results) {
@@ -26,5 +25,4 @@ export default {
         
         return responseData.results[0].key;
     }
-
 }

@@ -1,15 +1,12 @@
 <template>
-<div class="mb-12">
+<div class="mt-8">
     <img @click="getTrailer" class="card" :src="posterPath" alt="">
 </div>
 
 </template>
 <script>
 export default {
-    props:['name','poster_path','backdrop_path','overview','vote_average','id'],
-    created() {
-        console.log(this.poster_path);
-    },
+    props:['name','poster_path','backdrop_path','overview','vote_average','id','path'],
     computed: {
         posterPath() {
             return 'https://image.tmdb.org/t/p/original' + this.poster_path;
@@ -19,7 +16,16 @@ export default {
         async getTrailer() {
             let trailerId = null;
             try {
-            trailerId = await this.$store.dispatch('shows/fetchTrailer',this.id);
+                if (this.path === '/shows') {
+                    console.log(this.path);
+                    trailerId = await this.$store.dispatch('shows/fetchTrailer',this.id);
+                }
+                else if (this.path === '/movies') {
+                    trailerId = await this.$store.dispatch('movies/fetchTrailer',this.id);
+                }
+                else {
+                    trailerId = await this.$store.dispatch('shows/fetchTrailer',this.id);
+                }
             } catch (err) {
                 console.log(err);
             }
